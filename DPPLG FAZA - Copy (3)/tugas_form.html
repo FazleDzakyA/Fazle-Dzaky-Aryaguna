@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>FORM PENDAFTARAN</title>
+</head>
+<body>
+    <h3>FORM PENDAFTARAN</h3>
+    <br>
+    <p>*Nama</p> <input type="text" name="Nama" placeholder="ketik nama kamu"> 
+    <p>*Kota Kelahiran</p><input type="text"  list="kota_lahir" placeholder="ketik kota lahirmu"> 
+    <datalist id="kota_lahir">
+        <option value="Semarang">Semarang</option>
+        <option value="Balikpapan">Balikpapan</option>
+        <option value="Jakarta">Jakarta</option>
+        <option value="Yogyakarta">Yogyakarta</option>
+        <option value="Tegal">Tegal</option>
+        <option value="Kab Semarang">Kab Semarang</option>
+    </datalist>
+    <p>*Tanggal lahir</p> <input type="date" name="ttl">
+    <p>*Gender</p>  <input type="radio"id="pria" name="jeniskelamin"><label for="pria">pria</label>
+    <input type="radio"id="wanita" name="jeniskelamin"><label for="wanita">wanita</label>
+    <p>*No.Telepon</p> <input type="number" name="no_tlp" placeholder="contoh 08******">
+    <p>*Alamat</p> <textarea name="Alamat" id="" cols="40" rows="5"></textarea> <br><br><br>
+    *Agama =
+    <select name="Agama">
+        <option value="">Agama</option>
+        <option value="Islam">Islam</option>
+        <option value="Katholik">Katholik</option>
+        <option value="Kristen">Kristen</option>
+        <option value="Budha">Budha</option>
+        <option value="Hindu">Hindu</option>
+        <option value="Khonghucu">Khonghucu</option>
+    </select>
+   <br><br>
+    <p>*CATATAN VAKSIN</p>
+    <input type="radio" name="Vaksin" value="Sudah"> Sudah
+    <input type="radio" name="Vaksin" value="Belum"> Belum
+     <p>*Makanan favorit</p>
+    <input type="checkbox" name="Makanan_favorit" value="Nasi Goreng"> Nasi Goreng <br>
+    <input type="checkbox" name="Makanan_favorit" value="Mie Goreng"> Mie Goreng <br>
+    <input type="checkbox" name="Makanan_favorit" value="Ayam Geprek"> Ayam Geprek <br>
+
+</body>
+</html>
